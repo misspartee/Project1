@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GridLayout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="box"] {
+            display: inline-block;
+            /* margins are padding around the boxes*/
+            /* padding is the height of the box*/
+            /* width is the width of the box*/
+            border: dotted;
+            border-color: #ff5989;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        .col-1 {width: 19.00%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 33.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 55%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%; }
+        html {
+            font-family:Farisi,fantasy;
+        }
+        .header {
+            color: #000000;
+            border: dotted;
+        }
+    </style>
+
+</head>
+<body style="margin-top:35px;margin-right: 35px;margin-left: 35px">
+<!-- Divs = classes -->
+
+
+                    <!-- ROW 1 -->
+<!-- this padding changes the box margins -->
+<div class="row" style="padding-top: 10px;padding-right: 10px;padding-left: 10px">
+    <div class="header" style="border-color: #9c7aff">
+            <h1 align="center">The Design Issue</h1>
+    </div>
+</div>
+
+
+
+                    <!-- ROW 2 -->
+<div class="row" style="padding-left: 30px;padding-right: 10px">
+    <div class="header" style="border-color: #fb8eff;height: 75px">
+        <h1 align="center" >Navagation Bar</h1>
+    </div>
+</div>
+
+
+
+                    <!-- ROW 3 -->
+<div class="row" style="padding-right: 15px;padding-left: 15px">
+
+    <div class="col-4">
+        <div class="box" style="height: 400px;width: 380px">
+            <h1 style="text-align: center">Image 1</h1>
+        </div>
+
+        <div class="box" style="height: 200px;width: 380px">
+            <h1 style="text-align: center">Image 2</h1>
+        </div>
+    </div>
+
+    <div class="col-4">
+        <div class="box" style="height: 200px;width: 380px">
+            <h1 style="text-align: center">Image 3</h1>
+        </div>
+
+        <div class="box" style="height: 200px;width: 380px">
+            <h1 style="text-align: center">Image 4</h1>
+        </div>
+
+        <div class="box" style="height: 200px;width: 380px">
+            <h1 style="text-align: center">Image 5</h1>
+        </div>
+    </div>
+
+    <div class="col-4">
+        <div class="box" style="height: 200px;width: 380px">
+            <h1 style="text-align: center">Image 6</h1>
+        </div>
+
+        <div class="box" style="height: 400px;width: 380px">
+            <h1 style="text-align: center">Image 7</h1>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
